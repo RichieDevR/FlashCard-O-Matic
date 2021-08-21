@@ -7,7 +7,7 @@ _An easy to use flashcard app to help you study for anything!_
 
 <br>
 
-<image src="src/screenshot-flashcard-app.png">
+<image src="src/ScreenshotFlashCard.png">
 
 ## Summary
 
