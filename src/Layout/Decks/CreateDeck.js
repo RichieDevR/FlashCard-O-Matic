@@ -7,7 +7,7 @@ function CreateDeck() {
   return (
     <div>
       <Breadcrumb navArray={[{ name: "Create Deck" }]} />
-      <h2>Create Deck</h2>
+      <h2 className="text-light">Create Deck</h2>
       <DeckForm
         namePlaceholder="Deck Name"
         descriptionPlaceholder="A brief description of the deck."

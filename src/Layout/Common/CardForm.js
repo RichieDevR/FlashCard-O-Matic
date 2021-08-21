@@ -98,13 +98,13 @@ function CardForm({
         </div>
         <div className="form-group">
           <button
-            className="btn btn-secondary"
+            className="btn btn-secondary btn-outline-light"
             name="cancel"
             onClick={handleButtonClick}
           >
             {url === `/decks/${deckId}/cards/new` ? "Done" : "Cancel"}
           </button>
-          <button className="btn btn-info ml-2" name="submit" type="submit">
+          <button className="btn btn-danger btn-outline-light ml-2" name="submit" type="submit">
             {url === `/decks/${deckId}/cards/new` ? "Save" : "Submit"}
           </button>
         </div>
@@ -143,7 +143,7 @@ function CardForm({
           >
             {url === `/decks/${deckId}/cards/new` ? "Done" : "Cancel"}
           </button>
-          <button className="btn btn-info ml-2" name="submit" type="submit">
+          <button className="btn btn-danger btn-outline-light ml-2" name="submit" type="submit">
             {url === `/decks/${deckId}/cards/new` ? "Save" : "Submit"}
           </button>
         </div>

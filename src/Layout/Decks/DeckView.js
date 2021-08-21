@@ -48,7 +48,7 @@ function DeckView() {
               <div className="col-10 d-flex justify-content-start">
                 <Link
                   to={`/decks/${deckId}/edit`}
-                  className="btn btn-secondary"
+                  className="btn btn-secondary btn-outline-light"
                   name="editDeck"
                   value="edit"
                 >
@@ -56,13 +56,13 @@ function DeckView() {
                 </Link>
                 <Link
                   to={`/decks/${deckId}/study`}
-                  className="btn btn-info ml-2"
+                  className="btn btn-danger btn-outline-light ml-2"
                 >
                   <span className="oi oi-book"></span> Study
                 </Link>
                 <Link
                   to={`/decks/${deckId}/cards/new`}
-                  className="btn btn-info ml-2"
+                  className="btn btn-danger btn-outline-light ml-2"
                 >
                   <span className="oi oi-plus"></span> Add Cards
                 </Link>
@@ -77,7 +77,7 @@ function DeckView() {
             </div>
           </li>
         </div>
-        <h2 className="mt-4">Cards</h2>
+        <h2 className="mt-2 pl-9 pb-2 ">Cards</h2>
         <CardList cards={deck.cards} />
       </div>
     );

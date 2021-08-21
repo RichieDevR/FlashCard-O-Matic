@@ -38,7 +38,7 @@ function DeleteButton({ func, deckId, cardId = null, abrtSignal }) {
   }
 
   return (
-    <button className="btn btn-danger" onClick={handleDelete}>
+    <button className="btn btn-danger btn-outline-light" onClick={handleDelete}>
       <span className="oi oi-trash"></span>
     </button>
   );

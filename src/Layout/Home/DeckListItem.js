@@ -23,13 +23,13 @@ function DeckListItem({ deck }) {
           <div className="col d-flex justify-content-start">
             <Link
               to={`decks/${deck.id}`}
-              className="btn btn-secondary"
+              className="btn btn-danger btn-outline-light"
               name="viewDeck"
               value="view"
             >
               <span className="oi oi-eye"></span> View
             </Link>
-            <Link to={`/decks/${deck.id}/study`} className="btn btn-info ml-2">
+            <Link to={`/decks/${deck.id}/study`} className="btn btn-dark btn-outline-light ml-2">
               <span className="oi oi-book"></span> Study
             </Link>
           </div>

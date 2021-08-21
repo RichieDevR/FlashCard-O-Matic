@@ -52,7 +52,7 @@ function StudyCard({ cards: { allCards }, index, setIndex, deckId }) {
           You need at least 3 cards to study. There are {allCards.length} in
           this deck.
         </p>
-        <Link className="btn btn-info" to={`/decks/${deckId}/cards/new`}>
+        <Link className="btn btn-danger" to={`/decks/${deckId}/cards/new`}>
           <span className="oi oi-plus"></span> Add Cards
         </Link>
       </div>
@@ -60,7 +60,7 @@ function StudyCard({ cards: { allCards }, index, setIndex, deckId }) {
   } else {
     return (
       <div>
-        <div className="border rounded p-3">
+        <div className="border bg-light rounded p-3">
           <h4 className="row pl-3">
             Card {index + 1} of {allCards.length}
           </h4>
@@ -80,7 +80,7 @@ function StudyCard({ cards: { allCards }, index, setIndex, deckId }) {
             </button>
             {flipped === true ? (
               <button
-                className="btn btn-info mt-4 ml-2 pl-3"
+                className="btn btn-danger mt-4 ml-2 pl-3"
                 name="next"
                 onClick={handleClick}
               >

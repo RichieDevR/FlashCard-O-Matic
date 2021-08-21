@@ -34,7 +34,7 @@ function Home() {
   return (
     <div>
       <button
-        className="btn btn-secondary"
+        className="btn btn-danger btn-outline-light"
         name="createDeck"
         onClick={handleButtonClick}
         value="new"

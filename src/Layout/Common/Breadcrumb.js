@@ -12,8 +12,8 @@ function Breadcrumb({ navArray }) {
       );
     } else {
       return (
-        <li key={index} className="breadcrumb-item">
-          <Link to={`${link.url}`}>{link.name}</Link>
+        <li key={index} className="breadcrumb-item ">
+          <Link to={`${link.url}`} className="text-danger">{link.name}</Link>
         </li>
       );
     }
@@ -22,9 +22,9 @@ function Breadcrumb({ navArray }) {
   return (
     <div>
       <nav aria-label="breadcrumb">
-        <ol className="breadcrumb">
+        <ol className="breadcrumb bg-dark">
           <li className="breadcrumb-item">
-            <Link to="/">Home</Link>
+            <Link to="/" className = "text-light">Home</Link>
           </li>
           {breadcrumbLinks}
         </ol>

@@ -77,7 +77,7 @@ function DeckForm({
           <label htmlFor="form-name">Name</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control "
             id="form-name"
             name="name"
             onChange={changeHandler}
@@ -97,13 +97,13 @@ function DeckForm({
         </div>
         <div className="form-group">
           <button
-            className="btn btn-secondary"
+            className="btn btn-secondary btn-outline-light"
             name="cancel"
             onClick={handleButtonClick}
           >
             Cancel
           </button>
-          <button className="btn btn-info ml-2" name="submit" type="submit">
+          <button className="btn btn-danger btn-outline-light ml-2" name="submit" type="submit">
             Submit
           </button>
         </div>
@@ -136,13 +136,13 @@ function DeckForm({
         </div>
         <div className="form-group">
           <button
-            className="btn btn-secondary"
+            className="btn btn-dark"
             name="cancel"
             onClick={handleButtonClick}
           >
             Cancel
           </button>
-          <button className="btn btn-info ml-2" name="submit" type="submit">
+          <button className="btn btn-danger btn-outline-light ml-2" name="submit" type="submit">
             Submit
           </button>
         </div>

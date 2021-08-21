@@ -8,7 +8,7 @@ function CardListItem({ card: { id, front, back, deckId } }) {
   return (
     <div>
       <div className="border list-group mt-3">
-        <li key={id} id={id} className="list-group-item">
+        <li key={id} id={id} className="list-group-item ">
           <div className="row d-flex justify-content-between">
             <div className="col d-flex justify-content-start">{front}</div>
             <div className="col d-flex justify-content-end">{back}</div>
@@ -17,7 +17,7 @@ function CardListItem({ card: { id, front, back, deckId } }) {
             <div className="col d-flex justify-content-end">
               <Link
                 to={`/decks/${deckId}/cards/${id}/edit`}
-                className="btn btn-secondary mr-2"
+                className="btn btn-secondary btn-outline-light mr-2"
               >
                 <span className="oi oi-pencil"></span> Edit
               </Link>
